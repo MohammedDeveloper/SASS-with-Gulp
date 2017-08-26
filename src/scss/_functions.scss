@@ -1,0 +1,12 @@
+/**
+* Funcions
+*/
+@function setTextColor($color) {
+    
+        /// check the color tone
+        @if(lightness($color) > 50){
+            @return #000;
+        } @else {
+            @return #fff;
+        }
+    }
